@@ -22,12 +22,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/boton_redes"
-        android:text="Redes"/>
+        android:text="Redes"
+        android:backgroundTint="@color/blue"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/boton_favorito"
-        android:text="Favorito"/>
+        android:text="Favorito"
+        android:backgroundTint="@color/blue"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

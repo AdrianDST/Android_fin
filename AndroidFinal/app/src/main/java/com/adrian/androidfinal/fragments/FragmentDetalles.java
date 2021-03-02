@@ -14,7 +14,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.adrian.androidfinal.R;
-
+import com.adrian.androidfinal.dialogos.Dialogo;
 import com.adrian.androidfinal.utils.Equipo;
 import com.bumptech.glide.Glide;
 
@@ -50,6 +50,7 @@ public class FragmentDetalles extends Fragment {
         super.onActivityCreated(savedInstanceState);
         instancias();
         meterDetalle();
+        acciones();
 
     }
     public static FragmentDetalles newInstance(Equipo equipo) {
@@ -66,6 +67,20 @@ public class FragmentDetalles extends Fragment {
     nombreEquipo = getView().findViewById(R.id.nombre_equipo);
     descripcionEquipo = getView().findViewById(R.id.texto_descripcion);
     }
+    public void acciones(){
+    botonRedes.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Dialogo dialogo = Dialogo.newInstance(equipo);
+            dialogo.show(getFragmentManager(),"tag");
+        }
+    });
+    botonFavorito.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
 
+        }
+    });
+    }
 
 }

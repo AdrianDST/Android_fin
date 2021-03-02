@@ -43,7 +43,7 @@ public class AdaptadorEscudos extends RecyclerView.Adapter<AdaptadorEscudos.MiHo
 
     @Override
     public void onBindViewHolder(@NonNull MiHolder holder, int position) {
-        Equipo equipoEscudo = listaEscudos.get(position);
+        final Equipo equipoEscudo = listaEscudos.get(position);
         Glide.with(context).load(equipoEscudo.getEscudo()).into(holder.imagenEscudo);
         holder.botonDetalle.setOnClickListener(new View.OnClickListener() {
             @Override

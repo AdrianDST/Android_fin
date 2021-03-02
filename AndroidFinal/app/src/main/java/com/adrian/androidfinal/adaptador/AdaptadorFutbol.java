@@ -42,13 +42,13 @@ public class AdaptadorFutbol extends RecyclerView.Adapter<AdaptadorFutbol.MiHold
     @Override
     public void onBindViewHolder(@NonNull MiHolder holder, int position) {
 
-        final Liga ligapresente = listaLigas.get(position);
-        holder.getNombreLiga().setText(ligapresente.getNombre());
+        final Liga ligaActual = listaLigas.get(position);
+        holder.getNombreLiga().setText(ligaActual.getNombre());
 
-        holder.nombreLiga.setOnClickListener(new View.OnClickListener() {
+        holder.futboll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                listener.onLigaSelected(ligapresente);
+                listener.onLigaSelected(ligaActual);
             }
         });
     }
@@ -63,15 +63,15 @@ public class AdaptadorFutbol extends RecyclerView.Adapter<AdaptadorFutbol.MiHold
     }
 
     class MiHolder extends RecyclerView.ViewHolder {
-        private TextView nombreLiga;
+        private TextView futboll;
 
         public MiHolder(@NonNull View itemView) {
             super(itemView);
-            nombreLiga = itemView.findViewById(R.id.recycler_item);
+            futboll = itemView.findViewById(R.id.recycler_item);
         }
 
         public TextView getNombreLiga() {
-            return nombreLiga;
+            return futboll;
         }
     }
 

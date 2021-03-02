@@ -14,12 +14,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Usuario"
+        android:textColor="@color/blue"
         android:id="@+id/usuario"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Contraseña"
         android:id="@+id/contraseña"
+        android:textColor="@color/blue"
         android:layout_marginBottom="20dp"/>
     <Button
         android:layout_width="match_parent"
