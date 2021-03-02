@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:id="@+id/imagen_banner"
+        android:src="@drawable/liga"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/nombre_equipo"
+        android:textSize="50sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/boton_redes"
+        android:text="Redes"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/boton_favorito"
+        android:text="Favorito"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/texto_descripcion"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        />
+
+</LinearLayout>
